@@ -1,0 +1,157 @@
+body.char-body {
+  background: linear-gradient(
+    to right,
+    darken($primary-color, 10) 50%,
+    $primary-color
+  );
+}
+main {
+  section#characters {
+    @include bgImage($path-char-hero, 50vh);
+    border-bottom: 5px solid $green3-color;
+    background-position: 90%;
+    background-repeat: no-repeat;
+  }
+  .pagination {
+    margin-top: 50vh;
+        ul{
+            display: flex;
+            align-items: center;
+
+            justify-content: center;
+            gap: 3rem;
+            padding-bottom: 3rem;
+            li {
+                cursor: pointer;
+                @include navStyle;
+                
+            }
+
+        }
+  }
+  section.char-content {
+    // margin-top: 50vh;÷
+    padding: 3rem;
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+
+      .card {
+        border-bottom: 10px;
+        background-color: darken($blue-color, 10%);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        border-radius: 10px;
+        cursor: pointer;
+        @include lightGreenHover;
+
+        &:hover {
+          transform: scale(1.02);
+        }
+
+        .card__image {
+          flex: 1;
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+
+          }
+        }
+
+        .card__content {
+          flex: 4;
+          color: #fff;
+          padding: 1.5rem 1rem;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1rem;
+          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+          h4 {
+            font-family: $patrick-font;
+            font-size: 2rem;
+            color: $secondary-color;
+          }
+          .first-specs {
+            i {
+              font-size: 0.7rem;
+              padding: 3px 5px;
+              position: relative;
+              bottom: 3px;
+            }
+          }
+          .origin-container,
+          .location-container,
+          .first-seen-container {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 0.5rem;
+            .origin-name,
+            .location-name,
+            .first-seen-name {
+              color: $green4-color;
+            }
+
+            .origin,
+            .location,
+            .first-seen {
+              color: $lime-color;
+              margin-left: 10px;
+            }
+          }
+        }
+
+        .card__footer {
+          flex: 4;
+        }
+      }
+    }
+  }
+}
+
+/*========Media queries (Medium Screen)==========*/
+@media screen and (max-width: 1024px) {
+  main {
+    section.char-content {
+      .container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+      }
+    }
+  }
+}
+
+/*========Media queries (Small Screen)==========*/
+@media screen and (max-width: 800px) {
+  main {
+    section.char-content {
+      .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        
+      }
+    }
+  }
+}
+
+/*========Media queries (X - Small Screen)==========*/
+@media screen and (max-width: 450px) {
+  main {
+    section.char-content {
+      .container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+    }
+  }
+}

@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Patrick+Hand&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+
 
 //base
 @import "./base/reset";
@@ -14,11 +16,13 @@
 
 //pages
 @import "./pages/hero";
+@import "./pages/characters";
 
 
 
 
 body{
-    // background-color: $brown-color;
-    height: 100vh;
+  
+    
 }
+

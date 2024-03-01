@@ -1,0 +1,135 @@
+footer.horizontal {
+  position: fixed;
+  width: 98%;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+
+  .footer__social-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    img {
+        width: 35px;
+        height: 35px;
+      @include lightGreenHover;
+      cursor: pointer;
+      @include softTransition(0.4s);
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+
+   
+  }
+ 
+
+  .footer__copyrigtht {
+    p {
+      font-size: 1rem;
+      color: $green3-color;
+    }
+  }
+}
+
+
+
+footer.vertical {
+    position: fixed;
+    width: 98%;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+  
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+  
+    .footer__social-icons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+  
+      img {
+          width: 35px;
+          height: 35px;
+        @include lightGreenHover;
+        cursor: pointer;
+        @include softTransition(0.4s);
+        &:hover {
+          transform: translateY(-5px);
+        }
+      }
+  
+     
+    }
+   
+  
+    .footer__copyrigtht {
+      p {
+        font-size: 1rem;
+        color: $green3-color;
+        writing-mode: tb-rl; 
+      }
+    }
+  }
+  
+
+
+/*========Media queries (Medium Screen)==========*/
+@media screen and (max-width: 1024px) {
+    footer.horizontal, footer.vertical {
+        width: 96%;
+      
+        .footer__social-icons {
+          gap: .4rem;
+      
+          img { 
+             
+          }
+      
+         
+        }
+       
+      
+        .footer__copyrigtht {
+          p { 
+          }
+        }
+      }
+
+}
+
+
+/*========Media queries (Small Screen)==========*/
+@media screen and (max-width: 600px) {
+
+    footer.horizontal, footer.vertical { 
+      
+        .footer__social-icons {
+           
+      
+          img {
+              width: 25px;
+              height: 25px;
+             
+          }
+      
+         
+        }
+       
+      
+        .footer__copyrigtht {
+          p {
+            font-size: .7rem;
+          }
+        }
+      }
+
+}

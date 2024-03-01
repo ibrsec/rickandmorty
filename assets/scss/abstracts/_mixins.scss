@@ -5,9 +5,9 @@
     transition: all $duration ease;
 }
 
-@mixin bgImage($path){
-    background: url($path);
-    height: 100vh;
+@mixin bgImage($path,$heigth){
+    background: linear-gradient(rgba(black,.3),rgba(gray,.1)),url($path);
+    height: $heigth;
     width: 100%;
     background-position: 40% ;
     background-size: cover;
@@ -17,4 +17,27 @@
     right: 0;
     bottom: 0;
     z-index: -1;;
+}
+
+@mixin lightGreenHover {
+    transition: .5s all ease;
+    &:hover{
+        filter:drop-shadow(5px 5px 20px $lime-color);
+      }
+}
+
+@mixin navStyle {
+    color: $secondary-color;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: $green3-color;
+        font-size: 2rem;
+        font-family: $patrick-font;
+        @include softTransition(600ms);
+        @include lightGreenHover;
+
+        &:hover {
+          color: $lime-color;
+          padding-bottom: 4px;
+          border-bottom: 2px solid;
+        }
 }

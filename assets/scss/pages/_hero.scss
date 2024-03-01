@@ -1,13 +1,31 @@
 main {
   section#hero {
-    @include bgImage($path-hero);
+    @include bgImage($path-hero,100vh);
     .container {
 
         img{
             position: absolute;
             bottom:10%;
             left: 7%;
+         
+          }
+    }
+  }
+}
+
+
+
+/*========Media queries (Medium Screen)==========*/
+@media screen and (max-width: 1024px) {
+  section#hero {
+    
+    .container {
+
+        img{
+            width: 80%;
+
         }
     }
   }
 }
+
