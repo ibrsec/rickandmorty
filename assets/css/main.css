@@ -237,8 +237,39 @@ main section#characters {
   background-position: 90%;
   background-repeat: no-repeat;
 }
-main .pagination {
+main .search_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 50vh;
+  margin-bottom: 50px;
+  gap: 1rem;
+}
+main .search_container input {
+  height: 3rem;
+  width: 40%;
+  background-color: transparent;
+  border: 2px solid #83E43D;
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: #39E164;
+}
+main .search_container button {
+  height: 3rem;
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9B9D28;
+  cursor: pointer;
+  transition: 0.5s all ease;
+  border: none;
+}
+main .search_container button:hover {
+  filter: drop-shadow(5px 5px 20px #C2F35F);
 }
 main .pagination ul {
   display: flex;
@@ -256,6 +287,7 @@ main .pagination ul li {
   font-family: "Patrick Hand", cursive;
   transition: all 600ms ease;
   transition: 0.5s all ease;
+  font-size: 1.1rem;
 }
 main .pagination ul li:hover {
   filter: drop-shadow(5px 5px 20px #C2F35F);
@@ -264,6 +296,32 @@ main .pagination ul li:hover {
   color: #C2F35F;
   padding-bottom: 4px;
   border-bottom: 2px solid;
+}
+main .pagination .page-container {
+  text-align: center;
+  color: #50A54E;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #83E43D;
+  font-size: 2rem;
+  font-family: "Patrick Hand", cursive;
+  transition: all 600ms ease;
+  transition: 0.5s all ease;
+  font-size: 1.5rem;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+main .pagination .page-container:hover {
+  filter: drop-shadow(5px 5px 20px #C2F35F);
+}
+main .pagination .page-container:hover {
+  color: #C2F35F;
+  padding-bottom: 4px;
+  border-bottom: 2px solid;
+}
+main .pagination .page-container:hover {
+  color: #C2F35F;
+  padding-bottom: none;
+  border-bottom: none;
 }
 main section.char-content {
   padding: 3rem;

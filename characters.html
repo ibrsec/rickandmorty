@@ -31,19 +31,20 @@
       <section id="characters"></section>
 
       <section class="char-content">
+        <div class="search_container">
+            <input type="text" placeholder="Character name" id="search-input">
+            <button id="search-btn">Search</button>
+        </div>
         <div class="pagination">
           <ul>
-            <li class="active"  id="prev-page">Prev</li>
-            <li  id="first-page" >First Page</li>
-            <li  id="last-page">Last Page</li>
+            <li class="active" id="prev-page">Prev</li>
+            <li id="first-page">First Page</li>
+            <li id="last-page">Last Page</li>
             <li id="next-page">Next</li>
           </ul>
+          <div class="page-container">Page : <span id="page">1</span></div>
         </div>
         <div class="container" id="card-container">
-
-
-
-
           <!-- <div class="card">
 
 
@@ -77,14 +78,6 @@
 
 
           </div> -->
-
-
-
-
-
-
-
-
         </div>
       </section>
     </main>

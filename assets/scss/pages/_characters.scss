@@ -12,22 +12,67 @@ main {
     background-position: 90%;
     background-repeat: no-repeat;
   }
-  .pagination {
+
+  .search_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 50vh;
-        ul{
-            display: flex;
-            align-items: center;
+    margin-bottom: 50px;
+    gap: 1rem;
 
-            justify-content: center;
-            gap: 3rem;
-            padding-bottom: 3rem;
-            li {
-                cursor: pointer;
-                @include navStyle;
-                
-            }
+    input {
+      height: 3rem;
+      width: 40%;
+      background-color: transparent;
+      border: 2px solid $green3-color;
+      border-radius: 10px;
+      padding: 1rem;
+      font-size: 1.2rem;
+      color: $green2-color;
+    }
+    button {
+      height: 3rem;
+      border-radius: 10px;
+      padding: 1rem;
+      font-size: 1.1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $green5-color;
+      cursor: pointer;
+      @include lightGreenHover;
+      border: none;
+    }
+  }
+  .pagination {
+    // margin-top: 50vh;
+    ul {
+      display: flex;
+      align-items: center;
 
-        }
+      justify-content: center;
+      gap: 3rem;
+      padding-bottom: 3rem;
+      li {
+        cursor: pointer;
+        @include navStyle;
+        font-size: 1.1rem;
+      }
+    }
+    .page-container {
+      text-align: center;
+      @include navStyle;
+      font-size: 1.5rem;
+
+      margin-top: -10px;
+      margin-bottom: 10px;
+      &:hover {
+        color: $lime-color;
+        padding-bottom: none;
+        border-bottom: none;
+      }
+    }
   }
   section.char-content {
     // margin-top: 50vh;÷
@@ -62,7 +107,6 @@ main {
             width: 100%;
             object-fit: cover;
             border-radius: 10px 10px 0 0;
-
           }
         }
 
@@ -138,7 +182,6 @@ main {
       .container {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
-        
       }
     }
   }
