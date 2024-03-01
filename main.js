@@ -151,7 +151,7 @@ const sendDataToCards = (item) => {
   //first_specs - statusSpan
   let statusSpan = document.createElement("span");
   statusSpan.classList.add("status");
-  statusSpan.textContent = item.status + " - ";
+  statusSpan.textContent = " " +item.status + " - ";
   if (statusSpan.textContent.includes("Alive")) {
     circleSign.style.color = "green";
   }
