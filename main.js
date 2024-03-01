@@ -66,6 +66,8 @@ async function rickAndMorty(apiUrl,pagination='') {
 responseData.results.forEach(item => {
     sendDataToCards(item);
 
+});
+
     document.querySelector("#next-page").addEventListener("click",() => {
         console.log('click try');
         rickAndMorty(responseData.info.next);
@@ -87,7 +89,6 @@ responseData.results.forEach(item => {
     
     });
 
-});
 
   
 };
