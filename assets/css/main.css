@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Patrick+Hand&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/********* Mixins ***********/
+/****** NAV ******/
+nav {
+  padding: 2rem;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 3rem;
+  margin-right: 3rem;
+}
+nav ul li a {
+  color: #F7ED75;
+  font-size: 1.5rem;
+  font-family: "Patrick Hand", cursive;
+  transition: all 600ms ease;
+}
+nav ul li a:hover {
+  color: #C2F35F;
+  padding-bottom: 4px;
+  border-bottom: 2px solid;
+}
+
+main section#hero {
+  background: url("../img/hero.webp");
+  height: 100vh;
+  width: 100%;
+  background-position: 40%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+main section#hero .container img {
+  position: absolute;
+  bottom: 10%;
+  left: 7%;
+}
+
+body {
+  height: 100vh;
+}
+
+/*# sourceMappingURL=main.css.map */

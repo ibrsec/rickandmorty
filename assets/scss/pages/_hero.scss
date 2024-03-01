@@ -1,0 +1,13 @@
+main {
+  section#hero {
+    @include bgImage($path-hero);
+    .container {
+
+        img{
+            position: absolute;
+            bottom:10%;
+            left: 7%;
+        }
+    }
+  }
+}

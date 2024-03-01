@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Patrick+Hand&display=swap');
+
+//base
+@import "./base/reset";
+
+//abstracts
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+
+//components
+@import "./components/responsive";
+@import "./components/nav";
+@import "./components/footer";
+
+//pages
+@import "./pages/hero";
+
+
+
+
+body{
+    // background-color: $brown-color;
+    height: 100vh;
+}
