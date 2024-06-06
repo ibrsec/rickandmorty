@@ -15,7 +15,7 @@
     <a href="https://github.com/ibrsec/rickandmorty"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://ibrsec.github.io/rickandmorty/">View Demo</a>
+    <a href="https://rickandmorty-gamma-three.vercel.app/">View Demo</a>
     ·
     <a href="https://github.com/ibrsec/rickandmorty/issues">Report Bug</a>
     ·
@@ -60,7 +60,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![rickandmorty](./assets/img/project.gif)](https://ibrsec.github.io/rickandmorty/)
+[![rickandmorty](./assets/img/project.gif)](https://rickandmorty-gamma-three.vercel.app/)
 
 
 
